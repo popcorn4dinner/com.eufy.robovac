@@ -1,0 +1,24 @@
+{
+  "id": "com.eufy.robovac",
+  "version": "0.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Eufy Robovac"
+  },
+  "description": {
+    "en": "Adds support for Eufy Robovac 11"
+  },
+  "category": [
+    "appliances"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Bastian Schnieders",
+    "email": "bastian.schnieders@me.com"
+  }
+}
