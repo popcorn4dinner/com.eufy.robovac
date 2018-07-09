@@ -13,7 +13,6 @@
     "appliances"
   ],
   "permissions": [
-    "homey:manager:ledring",
     "homey:wireless:ir"
   ],
   "images": {
