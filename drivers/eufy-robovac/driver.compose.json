@@ -1,0 +1,12 @@
+{
+  "id": "eufy-robovac",
+  "name": {
+    "en": "eufy-robovac"
+  },
+  "class": "vacuumcleaner",
+  "capabilities": [],
+  "images": {
+    "large": "/drivers/eufy-robovac/assets/images/large.png",
+    "small": "/drivers/eufy-robovac/assets/images/small.png"
+  }
+}
