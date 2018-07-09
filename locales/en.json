@@ -1,1 +1,13 @@
-{}
+{
+  "rf": {
+    "commands": {
+      "HOME": "return to the charging base",
+      "AUTO": "start auto cleaning",
+      "START": "start cleaning",
+      "PAUSE": "pause cleaning",
+      "SPOT": "start spot cleaning",
+      "ROOM": "start single room cleaning",
+      "EDGE": "start edge cleaning",
+      "MAX": "start max cleaning"
+    }
+}
