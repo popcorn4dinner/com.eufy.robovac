@@ -47,46 +47,25 @@
   },
   "drivers": [
     {
+      "id": "eufy_robovac",
       "class": "vacuumcleaner",
-      "capabilities": [
-        "start_auto_cleaning",
-		    "return_to_charging_base",
-		    "start_cleaning",
-		    "pause_cleaning",
-		    "start_single_room_cleaning",
-        "start_spot_cleaning",
-        "start_edge_cleaning",
-        "start_max_cleaning"
-      ],
+      "capabilities": [],
       "pair": [
         {
           "id": "rf.done"
         }
       ],
       "name": {
-        "en": "eufy Robovac 11 remote",
+        "en": "eufy Robovac 11 remote"
       },
-      "icon": "/drivers/eufy_robovac/assets/remote.svg",
+      "icon": "/drivers//assets/remote.svg",
       "images": {
-        "small": "/drivers/eufy_robovac/assets/images/small.jpg",
-        "large": "/drivers/eufy_robovac/assets/images/large.jpg"
+        "small": "/drivers//assets/images/small.jpg",
+        "large": "/drivers//assets/images/large.jpg"
       },
       "rf": {
-		    "signal": "eufy",
-		    "minTxInterval": 900,
-		    "cmdNumberPrefix": "DIGIT_",
-		    "capabilityToCommandMap": {
-			    "start_auto_cleaning": "AUTO",
-		      "return_to_charging_base": "HOME",
-		      "start_cleaning": "START",
-		      "pause_cleaning": "PAUSE",
-		      "start_single_room_cleaning": "ROOM",
-          "start_spot_cleaning": "SPOT",
-          "start_edge_cleaning": "EDGE",
-          "start_max_cleaning": "MAX"
-		    }
-      },
-      "id": "eufy_robovac"
+		    "signal": "eufy"
+      }
     }
   ],
   "signals": {
