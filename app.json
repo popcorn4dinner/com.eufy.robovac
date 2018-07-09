@@ -24,10 +24,76 @@
     "name": "Bastian Schnieders",
     "email": "bastian.schnieders@me.com"
   },
+  "flow": {
+    "actions": [
+      {
+        "id": "eufy_robovac:send_cmd",
+        "title": {
+          "en": "Send Command"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=eufy_robovac"
+          },
+          {
+            "name": "cmd",
+            "type": "autocomplete"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "class": "vacuumcleaner",
+      "capabilities": [
+        "start_auto_cleaning",
+		    "return_to_charging_base",
+		    "start_cleaning",
+		    "pause_cleaning",
+		    "start_single_room_cleaning",
+        "start_spot_cleaning",
+        "start_edge_cleaning",
+        "start_max_cleaning"
+      ],
+      "pair": [
+        {
+          "id": "rf.done"
+        }
+      ],
+      "name": {
+        "en": "eufy Robovac 11 remote",
+      },
+      "icon": "/drivers/eufy_robovac/assets/remote.svg",
+      "images": {
+        "small": "/drivers/eufy_robovac/assets/images/small.jpg",
+        "large": "/drivers/eufy_robovac/assets/images/large.jpg"
+      },
+      "rf": {
+		    "signal": "eufy",
+		    "minTxInterval": 900,
+		    "cmdNumberPrefix": "DIGIT_",
+		    "capabilityToCommandMap": {
+			    "start_auto_cleaning": "AUTO",
+		      "return_to_charging_base": "HOME",
+		      "start_cleaning": "START",
+		      "pause_cleaning": "PAUSE",
+		      "start_single_room_cleaning": "ROOM",
+          "start_spot_cleaning": "SPOT",
+          "start_edge_cleaning": "EDGE",
+          "start_max_cleaning": "MAX"
+		    }
+      },
+      "id": "eufy_robovac"
+    }
+  ],
   "signals": {
     "ir": {
       "eufy": {
         "repetitions": 5,
+        "txOnly": true,
         "options": {
           "emulateToggleBits": true,
           "minTxInterval": 250
