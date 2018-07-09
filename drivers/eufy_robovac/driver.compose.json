@@ -2,7 +2,7 @@
   "$extends": [
 		"rf.ir_remote"
 	],
-  "id": "eufy-robovac",
+  "id": "eufy_robovac",
   "name": {
     "en": "eufy Robovac"
   },
